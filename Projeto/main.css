@@ -1,95 +1,278 @@
-
-
-html {
-    height: 100%;   
-    font-family: Cambria;
+*{
+    box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+body, h1, h2, p, ul, li, a{
+    margin: 0px;
+    padding: 0px;
 }
-.top{
-    background-color: rgb(218, 143, 32);
+body{
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    color: #222222;
+
 }
 
-.top img{
-    float: left;
-    width: 40;
-    height: 40px;
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+/* Menu items */
+
+.menu-bg{
+    background: #f19100f3;
 }
 
 .menu{
-    background: rgb(218, 143, 32);
-    width: 100%;
-    font-size: 23px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-.menu-items ul{
-    padding:0px;
-    margin:0px;
-    background-color:rgb(218, 143, 32);
-    float: right;
-    list-style:none;
+.menu a{
+    color: white
 }
 
-.menu-items li {
-    display: inline;
-    margin: 40px;
+.menu-logo a{
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 0 10px;
 }
 
-.container{
-    position: relative;
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#img1{
-    position: absolute;
-    width:  100%;
-    height: 500px;
-  
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
 }
 
-#text-img1{
-    position: absolute;
-    left: 31.6px;
-    top: 200px;
-    font-size: 40px;
-    
+.menu-nav a:hover{
+    color: #ffc219f6;
 }
 
-#img2{
-    position: absolute;
-    top: 500px;
-    width:  100%;
-    height: 500px;
-  
+/* Introdução Travel Schooling */
+
+.intro{
+    font-size: 2.5em;
+    line-height: 2;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 10px;
 }
 
-#text-img2{
-    position: absolute;
-    left: 31.6px;
-    top: 500px;
-    font-size: 40px;
-    color: rgb(224, 130, 6);
+/* Sobre */
+
+.sobre{
+ border-top: 2px solid #f19100f3;
+ border-bottom: #f19100f3;
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 60px 0;
+ display: flex;
+ flex-wrap: wrap;
 }
 
+.sobre-info{
+    flex: 2;
+    margin: 0 10px;
+}
+
+.sobre-info h1{
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #7c7c7c;
+}
+
+/* Quem somos */
 
 
- footer{
-    position: relative;
-    top:1000px;
+.quemsomos{
+    border-top: 2px solid #f19100f3;
+    border-bottom: #f19100f3;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+   }
    
-}
+   .quemsomos-info{
+       flex: 2;
+       margin: 0 10px;
+   }
+   
+   .quemsomos-info h1{
+       font-size: 3em;
+       margin-bottom: .5em;
+   }
+   
+   .quemsomos-info p {
+       font-size: 1.25em;
+       line-height: 1.4;
+       margin-bottom: 1em;
+       color: #7c7c7c;
+   }
 
-footer img{
-    width: 40px;
-    height: 40px;
-    float: right;   
-}
-footer div{
-   float: right;
-}
+   /* Beneficios */
 
+   .beneficios{
+       border-top: 2px solid #f19100f3;
+       max-width: 960px;
+       margin: 60px auto;
+       display: flex;
+       flex-wrap: nowrap;
+   }
+
+   .beneficios-item{
+    flex:  1 1 300px;
+    margin: 20px 10px;
+   }
+
+   .beneficios-item h2{
+       font-size: 2.25em;
+       color: #a4a4a4;
+       margin-bottom: 20px;
+   }
+
+   .beneficios-item h2::before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 30px;
+   }
+
+   .beneficios-item:nth-last-of-type(1) h2::before{
+       background: green;
+   }
+
+   .beneficios-item:nth-last-of-type(2) h2::before{
+    background: orange;
+    }
+
+    .beneficios-item:nth-last-of-type(3) h2::before{
+        background: black;
+    }
+
+    .beneficios-item p{
+        font-size: 1.25em;
+        line-height: 1.4;
+        color: #7c7c7c;
+    }
+    
+
+    /* Fale Conosco */
+
+    .faleconosco{
+        background: #f7f7f7;
+        padding: 60px calc((100% - 960px) /2);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .faleconosco-info{
+        flex: 1 1 300px;
+        margin: o 10px;
+    }
+
+    .faleconosco-info h1{
+        font-size: 3em;
+        color: coral;
+    }
+
+    .faleconosco-info p {
+        font-size: 1.25em;
+        font-style: italic;
+        max-width: 200px;
+        color: coral;
+        margin-bottom: 10px;
+    }
+
+    .faleconosco-form{
+        flex: 2 1 260px;
+        margin: 0 10px;
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .faleconosco-form input{
+        flex: 3 1 200px;
+        font-size: 1.25em;
+        color: black;
+        font-style: italic;
+        border: 4px solid coral;
+        background: transparent;
+        padding: 10px;
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    .faleconosco-form button{
+        flex: 1 1 200px;
+        font-family: "Acme", Arial, Helvetica, sans-serif;
+        font-size: 2.25em;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-attachment: #ff1199;
+        color:white
+        margin 0px;
+        cursor: pointer;
+         border: 0px;
+        padding: 15px 10px;
+    }
+
+    @media (max-width: 600px) {
+        .faleconosco-form button{
+        font-size: 1.25em;
+        }
+    }
+
+    /* Footer */
+
+    .footer{
+        display: flex;
+        background: #f19100f3;
+        height: 130px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2em;
+        color: white;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    
+     .footer-nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+    .footer-nav a {
+         display: block;
+         padding: 10px; 
+    }
 
