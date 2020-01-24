@@ -66,6 +66,7 @@ img{
 
 .menu-nav a:hover{
     color: #ffc219f6;
+  
 }
 
 /* Introdução Travel Schooling */
@@ -238,8 +239,8 @@ img{
         font-weight: bold;
         text-transform: uppercase;
         background-attachment: #ff1199;
-        color:white
-        margin 0px;
+        color:white;
+        margin: 0px;
         cursor: pointer;
          border: 0px;
         padding: 15px 10px;
