@@ -6,7 +6,7 @@ body, h1, h2, p, ul, li, a{
     margin: 0px;
     padding: 0px;
 }
-body{
+body, h1, h2, h3, h4, h5{
     font-family: "Acme", Arial, Helvetica, sans-serif;
     color: #222222;
 
@@ -78,6 +78,100 @@ img{
     margin: 0 auto;
     padding: 60px 10px;
 }
+
+/* Modal */
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flex;
+  width: 135px;
+  border-bottom: 2px solid black;
+  background-color: rgb(248, 161, 47); 
+}
+
+
+.container {
+  padding: 16px;
+  display: flex;
+}
+
+.container-usuario{
+  width: 100%;
+}
+
+
+.container-usuario button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container-usuario button:hover{
+  background-color: black;
+  color: blanchedalmond;
+  border-radius: 4px 4px 4px;
+  
+}
+
+.container-usuario span {
+  flex: 1 1 200px;
+  padding-top: 16px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+  }
+
+
+.modal-content {  
+  background-color: rgb(248, 161, 47);
+  margin: auto 5% 5% auto;
+  border: 1px solid rgb(248, 161, 47);
+  border-radius: 5px 5px 5px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%; 
+}
+
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.senha {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
 
 /* Sobre */
 
