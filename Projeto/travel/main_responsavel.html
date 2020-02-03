@@ -8,7 +8,7 @@
 
     
     
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main_resp.css">
     <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
 
     <title>Pai Travel</title>
@@ -22,35 +22,40 @@
             <nav class="menu-items">
                 <ul >
                     <li>
-                        <a href="">  <img src="../Projeto/img/icon-calendario.png" alt=""> Programação do Mes</a>
+                        <a href="">  <img src="../img/icon-calendario.png" alt=""> Programação do Mes</a>
                     </li>
                     <li>
-                        <a href="">  <img src="../Projeto/img/icon-agenda.png" alt=""> Agenda de Eventos</a>
+                        <a href="">  <img src="../img/icon-agenda.png" alt=""> Agenda de Eventos</a>
                     </li>
                     <li>
-                        <a href=""> <img src="../Projeto/img/icon-config.png" alt=""> Perfil/Configurações</a>
+                        <a href=""> <img src="../img/icon-config.png" alt=""> Perfil/Configurações</a>
                     </li>                
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section>
-        <div>
+    <section class="programacao">
+        <div class="programacao-info">
             <h1>Programação do mes</h1>
-            <p></p>
+            <p>Volta as aulas</p>
         </div>
         <div>
-            <img src="" alt="">
+            <img src="../img/img_programaco_mes.jpg" alt="programacao-mes">
         </div>
     </section>
 
-    <section>
-        <div>
+    <section class="eventos">
+        <div class="eventos-info">
             <h1>Agenda de eventos</h1>
+            <h2 class="text">Vai deixar de levar seu filho pra ver o rei da Selva?!!</h2>
+            <h2 class="text">Seu filho fará história, mas antes disso ele precisa aprender sobre ela.</h2>
         </div>
         <div>
-            <img src="" alt="">
+            <img class="slides" src="../img/eventos_leao.jpg" alt="">
+            <img class="slides" src="../img/eventos_museu.jpg" alt="">
+
+
         </div>
     </section>
 
@@ -60,26 +65,47 @@
             </div>
             <nav class="footer-nav">
                 <ul>
-                    <a href="https://pt-br.facebook.com/" target="_blank"><img src="../Projeto/img/icon-facebook.png" alt=""></a>
-                    <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="../Projeto/img/icon-instagram.png" alt=""></a>
-                    <a href="https://www.youtube.com/?hl=pt&gl=BR" target="_blank"><img src="../Projeto/img/icon-youtube.png" alt=""></a> 
+                    <a href="https://pt-br.facebook.com/" target="_blank"><img src="../img/icon-facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="../img/icon-instagram.png" alt=""></a>
+                    <a href="https://www.youtube.com/?hl=pt&gl=BR" target="_blank"><img src="../img/icon-youtube.png" alt=""></a> 
                 </ul>
             </nav>
                 
         </footer>
 
+        <script>
+        
+        
+var myIndex = 0;
+slides();
 
+function slides() {
+  var x = document.getElementsByClassName("slides");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(slides, 6000); 
+}
 
+var index = 0;
+slidesText();
 
-
-
-
-
-
-
-
-
-
-    <script src="script.js"></script>
+function slidesText() {
+  var x = document.getElementsByClassName("text");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  index++;
+  if (index > x.length) {index = 1}    
+  x[index-1].style.display = "block";  
+  setTimeout(slidesText, 6000); 
+}
+        
+        
+        
+        </script>
   </body>
 </html>

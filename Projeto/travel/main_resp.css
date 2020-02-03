@@ -67,13 +67,68 @@ img{
     margin: 10px 0 0 10px;
 }
 
-/*  */
+.menu-items a:hover{
+    color: #ffbd42f3;
+}
+
+/* Programação do mês */
+
+.programacao{
+    max-width: 960px;
+    margin:  auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.programacao-info{
+    flex: 2;
+    margin: 0 10px;
+}
+
+.programacao-info h1{
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.programacao-info p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #7c7c7c;
+}
 
 
 
+/* Agenda de Eventos */
 
- 
 
+.eventos{
+    max-width: 960px;
+    margin:  auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.eventos-info{
+    flex: 2;
+    margin: 0 10px;
+}
+
+.eventos-info h1{
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.eventos-info h2 {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #7c7c7c;
+}
 
 
 
