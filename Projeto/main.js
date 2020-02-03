@@ -5,3 +5,8 @@ window.onclick = function(event) {
         display = "none";
     }
 }
+function pagInicial(){
+
+        window.location.replace("main_responsavel.html")
+    
+}
