@@ -50,7 +50,10 @@
             <p>Texto aqui</p>
         </div>
             <div class="quemsomos-img">
-                <img src="../Projeto/img/img2.jpg" alt="">
+                <img class="slide-show" src="../Projeto/img/img2.jpg" alt="">
+                <img class="slide-show" src="../Projeto/img/img3.jpg" alt="">
+                <img class="slide-show" src="../Projeto/img/img4.jpg" alt="">
+
             </div>
     </section>
     
@@ -76,7 +79,7 @@
         </div>
         <form class="faleconosco-form">
             <input type="text" placeholder="Seu e-mail">
-            <button type="submit" id="logo">Ok</button>
+            <button type="submit" id="logo" onclick="enviarEmail()">Ok</button>
         </form>
     </section>
     
@@ -101,13 +104,13 @@
                 <h3>Login do Usuário</h3>
     
                 <label for="e-mail"><b>E-mail</b></label>
-                <input class="w3-input w3-animate-input"  type="text" placeholder="E-mail" name="e-mail" >
+                <input class="w3-input w3-animate-input"  type="text" placeholder="E-mail" name="e-mail" required>
                 
     
                 <label for="senha"><b>Senha</b></label>
-                <input class="w3-input w3-animate-input"  type="password" placeholder="Senha" name="senha" >
+                <input class="w3-input w3-animate-input"  type="password" placeholder="Senha" name="senha" required>
     
-                <button type="submit" onclick="pagInicial()">Login</button>
+                <button type="button" onclick="pagInicial()">Login</button>
     
                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Voltar</button>
                     
