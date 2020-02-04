@@ -7,9 +7,11 @@ window.onclick = function(event) {
         display = "none";
     }
 }
-function pagInicial(){
+function pagInicial(usuario, senha){
 
-        window.location.href = "../travel/main_responsavel.html";
+        window.location.href = "../Projeto/travel/main_responsavel.html";    
+   
+    
     
 }
 
@@ -31,22 +33,6 @@ function slides() {
   setTimeout(slides, 1000); 
 }
 
-/*Slides Agenda de eventos*/
-
-
-var myIndex = 0;
-slidesResponsavel();
-
-function slidesResponsavel() {
-  var x = document.getElementsByClassName("slidesResponsavel");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(slidesResponsavel, 1000); 
-}
 
 
 
