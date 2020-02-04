@@ -8,12 +8,21 @@ window.onclick = function(event) {
     }
 }
 function pagInicial(usuario, senha){
+        
+    var usuario = document.querySelector('#id01 form input[name="e-mail"]').value;
+    var senha = document.querySelector('#id01 form input[name="senha"]').value;
 
-        window.location.href = "../Projeto/travel/main_responsavel.html";    
+        if (usuario.value == 'exemplo@exemplo.com' && senha.value == '12345678') {
+            window.location.href = "../Projeto/travel/main_responsavel.html";        
    
-    
-    
+        }else{
+            alert('Usuario não encontrado');
+        }
+
+     
 }
+
+
 
 
 /*Slides Quem somos*/
