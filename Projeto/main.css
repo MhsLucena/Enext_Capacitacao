@@ -239,17 +239,17 @@ input[type=text], input[type=password] {
        max-width: 960px;
        margin: 60px auto;
        display: flex;
-       flex-wrap: nowrap;
+       flex-wrap: wrap;
+       
    }
 
    .beneficios-item{
-    flex:  1 1 300px;
+    flex:1 1 ;
     margin: 20px 10px;
    }
 
    .beneficios-item h2{
        font-size: 2.25em;
-       color: #a4a4a4;
        margin-bottom: 20px;
    }
 
@@ -265,11 +265,11 @@ input[type=text], input[type=password] {
    }
 
    .beneficios-item:nth-last-of-type(2) h2::before{
-    background: orange;
+    background: black;
     }
 
     .beneficios-item:nth-last-of-type(3) h2::before{
-        background: black;
+        background: orange;
     }
 
     .beneficios-item p{
@@ -360,6 +360,11 @@ input[type=text], input[type=password] {
         flex-wrap: wrap;
     }
 
+    .footer-siga h1{
+        margin: 20px auto;
+        flex: wrap;
+
+    }
     
      .footer-nav ul{
         display: flex;
