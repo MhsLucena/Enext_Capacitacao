@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../travel/css/login.css" />
+    
+</head>
+<body>
+
+        <div class="container">
+            <h2>Entrar</h2>
+            
+            <form class="container-form" onsubmit="return false">
+               
+                <input type="text" name="usuario" id="" placeholder="Usuário" required>
+                <input type="password" name="senha" id="" placeholder="Senha" required>
+
+                <a href="">Esqueceu a senha ?</a>
+               
+                <button  type="submit" onclick="pagInicial()">Login</button>
+    
+                
+            </form>
+        </div>
+
+
+    <script >
+    
+    function pagInicial(usuario, senha){
+        
+        var usuario = document.querySelector('.container form input[name="usuario"]').value;
+        var senha = document.querySelector('.container form input[name="senha"]').value;
+    
+            if (usuario == 'exemplo' && senha == '123') {
+                window.location.href = "../travel/main_responsavel.html";        
+       
+            }else{
+                alert('Usuario não encontrado');
+            }
+    
+         
+    }
+
+    </script>
+
+</body>
+</html>

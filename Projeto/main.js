@@ -1,12 +1,4 @@
-/*Modal de login*/
 
-var modal = document.getElementById('id01');
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        display = "none";
-    }
-}
 function pagInicial(usuario, senha){
         
     var usuario = document.querySelector('#id01 form input[name="e-mail"]').value;
@@ -20,6 +12,11 @@ function pagInicial(usuario, senha){
         }
 
      
+}
+
+
+function pagLogin(){
+    window.location.href = "../Projeto/travel/login.html";
 }
 
 
